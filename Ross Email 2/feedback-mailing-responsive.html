@@ -7,7 +7,7 @@
   <style type="text/css">
    @media only screen and (max-width: 480px){
     body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
-    body{width:100% !important; min-width:100% !important;}/* Prevent iOS Mail from adding padding to the body */
+    body{max-width:100% !important;}/* Prevent iOS Mail from adding padding to the body */
     #templateContainer{
       max-width:600px !important;
       width:100% !important;
@@ -20,9 +20,14 @@
       width: 100% !important;
     }
     .templateColumnContainer{display:block !important;
-      width:100% !important;
+      max-width:100% !important;
     }
    }
+   @media only screen and (max-width: 375px){
+    .thebtn{
+      font-size: 17px !important;
+    }
+    }
   </style>
 <table id="templateContainer" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="650">
 <tbody>
@@ -42,26 +47,18 @@
       </td>
     </tr>
     <tr>
-      <td height="28">
-        <img src="http://f.aigemail.com/i/37/2089229562/AIG_SPACER.JPG" alt="" height="28" border="0" width="38">
-      </td>
-    </tr>
-    <tr>
       <td style="font: 12px Arial, Helvetica, sans-serif; color: #666;">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tbody>
         <tr>
-          <td width="38">
-            <img src="http://f.aigemail.com/i/37/2089229562/AIG_SPACER.JPG" alt="" height="1" border="0" width="38">
-          </td>
           <td>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table border="0" cellpadding="30" cellspacing="0" width="100%">
             <tbody>
             <tr>
               <td class="templateColumnContainer" valign="top">
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td width="75%" style="font: 12px Arial, Helvetica, sans-serif; color: #666; text-align:left;" align="left" valign="top">
+                  <td style="font: 12px Arial, Helvetica, sans-serif; color: #666; text-align:left;" align="left" valign="top">
                     Hi %%NAME%%<br>
                     <br>
                     Firstly, thank you for choosing AIG for your Car Insurance needs. Our customers are especially important to us and we hope that we provided you with the service you expected
@@ -85,12 +82,12 @@
                                 <td class="btn-left" width="8" height="36" bgcolor="#e36f1e">
                                   <img src="http://www.aigdirect.ie/chartisint/internet/IE/en/files/button-left_tcm1189-520418.png" style="display: block;" width="8" height="36" border="0">
                                 </td>
-                                <td bgcolor="#e36f1e">
-                                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                <td>
+                                  <table background="#e36f1e" cellpadding="0" cellspacing="0" border="0" align="center">
                                     <tbody><tr>
                                       <td width="100%" height="36" class="btn-mid" valign="middle" align="center" background="http://www.aigdirect.ie/chartisint/internet/IE/en/files/button-middle_tcm1189-520420.png" style="background-repeat: repeat-x no-repeat; background-image: url('http://www.aigdirect.ie/chartisint/internet/IE/en/files/button-middle_tcm1189-520420.png');">
                                         <!--[if gte mso 9]>
-                                          <v:rect style="width:267px;height:36px;" strokecolor="none"><v:fill type="tile" src="http://www.aigdirect.ie/chartisint/internet/IE/en/files/button-middle_tcm1189-520420.png" /></v:fill></v:rect>
+                                          <v:rect fillcolor="#e36f1e" style="width:267px;height:36px" strokecolor="none"><v:fill type="tile" src="http://www.aigdirect.ie/chartisint/internet/IE/en/files/button-middle_tcm1189-520420.png" /></v:fill></v:rect>
                                               <v:shape id="theText" style="display:inline-block; position:relative; height:36px; width:267px;margin:0 auto; border:0; z-index:2; text-align:center; line-height:36px;">
                                         <![endif]-->
                                         <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-collapse: collapse;">
@@ -116,19 +113,17 @@
                 </tr>
                 </table>
               </td>
-              <td>
-                <img src="http://f.aigemail.com/i/37/2089229562/AIG_SPACER.JPG" alt="" height="1" border="0" width="12">
-              </td>
               <td class="templateColumnContainer" style="font: 12px Arial, Helvetica, sans-serif; color: #666;" align="CENTER" valign="top">
-                  <img src="http://www.aigdirect.ie/chartisint/internet/IE/en/files/one4all_tcm1189-519711.jpg" alt="one4all" height="auto" max-width="100%">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center"><img src="http://www.aigdirect.ie/chartisint/internet/IE/en/files/one4all_tcm1189-519711.jpg" alt="one4all" height="auto" max-width="100%"></td>
+                  </tr>
+                </table>
                 <br>
               </td>
             </tr>
             </tbody>
             </table>
-          </td>
-          <td width="38">
-            <img src="http://f.aigemail.com/i/37/2089229562/AIG_SPACER.JPG" alt="" height="1" border="0" width="38">
           </td>
         </tr>
         </tbody>
@@ -139,19 +134,9 @@
     </table>
   </td>
 </tr>
-<tr>
-  <td>
-    <img src="http://f.aigemail.com/i/37/2089229562/AIG_SPACER.JPG" alt="" height="30" border="0" width="1">
-  </td>
-</tr>
-<tr>
-  <td style="padding: 30px 30px 30px 0px; background: #e7e7e8; font: 10px arial; color: #666; " align="left">
-    
-  </td>
-</tr>
 </tbody>
 </table>
-<table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" style="text-align: left;">
+<table id="templateContainer" width="650" border="0" align="center" cellspacing="0" cellpadding="0" style="text-align: left;">
     <tr>
       <td><img src="http://www-111.aig.com/global/images/spacer.gif" border="0" width="1" height="8" alt=""></td>
     </tr>
